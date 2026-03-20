@@ -92,14 +92,17 @@ class Pokemon:
             return (data['abilities']['ability']['name'])
         else:
             return "Pikachu"
-
+    def feed(self):
+        self.hp += randint(5, 10)
     # Метод класса для получения информации
     def info(self):
         return f"Имя твоего покеомона: {self.name}"
-
+    def info(self):
+        return f"Имя покемона: {self.name}, Уровень: {self.level}, HP: {self.hp}, Атака: {self.attack}, Защита: {self.defense}, Скорость: {self.speed}"
     # Метод класса для получения картинки покемона
     def show_img(self):
         return self.img
+    
 
 
 
